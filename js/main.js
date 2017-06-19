@@ -61,15 +61,15 @@ $(document).ready(function(){
 
 
 	$("#threeIdeologies div").on("mouseenter", function(){
-		$(this).find("h2").hide();
-		$(this).find("p").show();
+		$(this).find("h2").stop().hide(500);
+		$(this).find("p").stop().show(500);
 		$(this).find("i").css("fontSize", "5rem");
 	});
 
 
 	$("#threeIdeologies div").on("mouseleave", function(){
-		$(this).find("h2").show();
-		$(this).find("p").hide();
+		$(this).find("h2").stop().show(500);
+		$(this).find("p").stop().hide(500);
 		$(this).find("i").css("fontSize", "8rem");
 	});
 
@@ -114,7 +114,7 @@ $(document).ready(function(){
 		element: document.getElementById("highlightsSection"),
 		handler: function(direction) {
 			if(direction === "down" && highlight1TriggeredYet === 0) {
-				$("#highlight1").show("slide", { direction: "left" }, 1000);
+				$("#highlight1").delay(1000).show("slide", { direction: "left" }, 1000);
 				highlight1TriggeredYet = 1;
 			}
 		},
@@ -125,7 +125,7 @@ $(document).ready(function(){
 		element: document.getElementById("highlightsSection"),
 		handler: function(direction) {
 			if(direction === "down" && highlight2TriggeredYet === 0) {
-				$("#highlight2").delay(1000).show("slide", { direction: "right" }, 1000);
+				$("#highlight2").delay(2000).show("slide", { direction: "right" }, 1000);
 				highlight2TriggeredYet = 1;
 			}
 		},
@@ -136,7 +136,7 @@ $(document).ready(function(){
 		element: document.getElementById("highlightsSection"),
 		handler: function(direction) {
 			if(direction === "down" && highlight3TriggeredYet === 0) {
-				$("#highlight3").delay(2000).show("slide", { direction: "left" }, 1000);
+				$("#highlight3").delay(3000).show("slide", { direction: "left" }, 1000);
 				highlight3TriggeredYet = 1;
 			}
 		},
@@ -147,22 +147,12 @@ $(document).ready(function(){
 		element: document.getElementById("highlightsSection"),
 		handler: function(direction) {
 			if(direction === "down" && highlight4TriggeredYet === 0) {
-				$("#highlight4").delay(3000).show("slide", { direction: "right" }, 1000);
+				$("#highlight4").delay(4000).show("slide", { direction: "right" }, 1000);
 				highlight4TriggeredYet = 1;
 			}
 		},
 		offset: "75%"
 	});
-
-
-
-
-
-
-
-
-
-
 
 
 
