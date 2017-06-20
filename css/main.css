@@ -479,9 +479,8 @@ COLORS:
 
 #highlightsSection {
 	background-color: #222;
-	padding-bottom: 5rem;
+	padding-bottom: 7.5rem;
 	height: auto;
-	transition: max-height 1s;
 }
 
 #highlightsSection > h1:first-of-type {
@@ -507,7 +506,6 @@ COLORS:
 	list-style: none;
 	padding: 20px 0 20px;
 	position: relative;
-	transition: height 1s;
 }
 
 .timeline h4 {

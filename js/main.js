@@ -114,6 +114,9 @@ $(document).ready(function(){
 		element: document.getElementById("highlightsSection"),
 		handler: function(direction) {
 			if(direction === "down" && highlight1TriggeredYet === 0) {
+				$(".timeline").animate({
+					height: "+=90rem"
+				}, 5000);
 				$("#highlight1").delay(1000).show("slide", { direction: "left" }, 1000);
 				highlight1TriggeredYet = 1;
 			}
