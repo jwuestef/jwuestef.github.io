@@ -60,6 +60,8 @@ $(document).ready(function(){
 	});
 
 
+
+
 	$("#threeIdeologies div").on("mouseenter", function(){
 		$(this).find("h2").stop().hide(500);
 		$(this).find("p").stop().show(500);

@@ -176,7 +176,7 @@ COLORS:
 
 
 /*===========================
-       TESTIMONIAL
+       TESTIMONIAL   /   TOP QUOTES
 ===========================*/
 
 #testimonialSection {
@@ -192,7 +192,7 @@ COLORS:
 	letter-spacing: 0.3rem;
 	text-align: center;
 	padding: 1rem;
-	padding-top: 3rem;
+	padding-top: 2rem;
 }
 
 .carousel-content {
